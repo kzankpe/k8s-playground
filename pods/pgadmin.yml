@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dpadmin
+  labels:
+    name: dpadmin
+spec:
+  containers:
+  - name: dpadmin
+    image: dpage/pgadmin4
+    ports:
+      - containerPort: 8080
